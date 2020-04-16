@@ -1,0 +1,47 @@
+#darkmode-toggle{
+	background-color:#333;
+	font-style:dashicons;
+	color:white;
+	width:32px;
+	height:32px;
+	display:flex;
+	position:fixed;
+	bottom:32px;
+	right:32px;
+	border-radius:32px;
+	z-index:999;
+	border:1px solid #333;
+}
+
+#darkmode-toggle:hover{
+	cursor:pointer;
+	background:black;
+	color:#ece9e9;
+}
+
+#darkmode-toggle:active{
+	opacity:.7;
+} /* darkmode-toggle:active */
+
+#darkmode-toggle:before{
+	margin-top:19%;
+	margin-left:19%;
+}
+
+.darkmode--activated #darkmode-toggle{
+	background-color:white;
+	color:#333;
+	border-color:white;
+}
+
+.darkmode--activated #darkmode-toggle:hover{
+	background:#CCC;
+	color:black;
+}
+
+@media (prefers-color-scheme: dark){
+/**
+ * @todo deal with changing the scheme for the toggle button
+ */
+}
+
